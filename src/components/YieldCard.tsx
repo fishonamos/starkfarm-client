@@ -149,10 +149,11 @@ function getAPRWithToolTip(pool: PoolInfo) {
       </Text>
     </Box>
   );
-  
-  const effectiveYield = pool.strategy instanceof IStrategy
-    ? pool.strategy.calculateEffectiveYield(100) // Assuming 100 as initial investment
-    : pool.apr;
+
+  const effectiveYield =
+    pool.strategy instanceof IStrategy
+      ? pool.strategy.calculateEffectiveYield(100) // Assuming 100 as initial investment
+      : pool.apr;
 
   return (
     <Tooltip hasArrow label={tip} bg="gray.300" color="black">

@@ -338,9 +338,9 @@ export class IStrategy extends IStrategyProps {
 
   calculateEffectiveYield(initialInvestment: number): number {
     const harvestedAmount = initialInvestment * this.netYield;
-    const fee = harvestedAmount * 0.10; // 10% fee
+    const fee = harvestedAmount * 0.1; // 10% fee
     const totalAmount = harvestedAmount + fee;
-    const effectiveYield = (totalAmount / initialInvestment) - 1;
+    const effectiveYield = totalAmount / initialInvestment - 1;
     return effectiveYield;
   }
 }
