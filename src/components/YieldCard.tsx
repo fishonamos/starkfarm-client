@@ -152,7 +152,7 @@ function getAPRWithToolTip(pool: PoolInfo) {
 
   const effectiveYield =
     pool.strategy instanceof IStrategy
-      ? pool.strategy.calculateEffectiveYield(100) // Assuming 100 as initial investment
+      ? pool.strategy.calculateEffectiveYield(100)
       : pool.apr;
 
   return (
