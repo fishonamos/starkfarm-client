@@ -57,7 +57,7 @@ export class Carmine extends Jediswap {
         const rewardApr = parseFloat(poolData.rewardApr) || 0;
 
         const poolInfo: PoolInfo = {
-          strategy: IStrategy, // Change this line
+          strategy: IStrategy,
           pool: {
             id: this.getPoolId(this.name, config.name),
             name: config.name,

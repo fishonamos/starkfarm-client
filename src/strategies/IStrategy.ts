@@ -344,4 +344,3 @@ export class IStrategy extends IStrategyProps {
     return effectiveYield;
   }
 }
-//
